@@ -34,6 +34,3 @@ PLATFORMS
 
 DEPENDENCIES
   pact_broker-client
-
-BUNDLED WITH
-   1.17.2
