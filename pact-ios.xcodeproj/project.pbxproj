@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3DF0A0072F8FD70C00AF164A /* PactSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3DF0A0062F8FD70C00AF164A /* PactSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3DF09FE82F8FD33F00AF164A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF0A0072F8FD70C00AF164A /* PactSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				3DF09FDC2F8FD33C00AF164A /* pact-ios */,
 				3DF09FEA2F8FD33F00AF164A /* pact-iosTests */,
 				3DF09FF42F8FD33F00AF164A /* pact-iosUITests */,
+				3DF0A0052F8FD70C00AF164A /* Frameworks */,
 				3DF09FDB2F8FD33C00AF164A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				3DF09FF12F8FD33F00AF164A /* pact-iosUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3DF0A0052F8FD70C00AF164A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +148,7 @@
 			);
 			name = "pact-iosTests";
 			packageProductDependencies = (
+				3DF0A0062F8FD70C00AF164A /* PactSwift */,
 			);
 			productName = "pact-iosTests";
 			productReference = 3DF09FE72F8FD33F00AF164A /* pact-iosTests.xctest */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 3DF09FD12F8FD33B00AF164A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3DF0A0042F8FD61800AF164A /* XCRemoteSwiftPackageReference "PactSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3DF09FDB2F8FD33C00AF164A /* Products */;
 			projectDirPath = "";
@@ -570,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DF0A0042F8FD61800AF164A /* XCRemoteSwiftPackageReference "PactSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/surpher/PactSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DF0A0062F8FD70C00AF164A /* PactSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DF0A0042F8FD61800AF164A /* XCRemoteSwiftPackageReference "PactSwift" */;
+			productName = PactSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DF09FD22F8FD33B00AF164A /* Project object */;
 }
