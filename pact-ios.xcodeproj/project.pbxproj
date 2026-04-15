@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DE288ED2F9006C8005E8C8E /* Gemfile in Sources */ = {isa = PBXBuildFile; fileRef = 3DE288EC2F9006BE005E8C8E /* Gemfile */; };
 		3DF0A0072F8FD70C00AF164A /* PactSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3DF0A0062F8FD70C00AF164A /* PactSwift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DE288EC2F9006BE005E8C8E /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		3DF09FDA2F8FD33C00AF164A /* pact-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pact-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF09FE72F8FD33F00AF164A /* pact-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pact-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF09FF12F8FD33F00AF164A /* pact-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pact-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 		3DF09FD12F8FD33B00AF164A = {
 			isa = PBXGroup;
 			children = (
+				3DE288EC2F9006BE005E8C8E /* Gemfile */,
 				3DF09FDC2F8FD33C00AF164A /* pact-ios */,
 				3DF09FEA2F8FD33F00AF164A /* pact-iosTests */,
 				3DF09FF42F8FD33F00AF164A /* pact-iosUITests */,
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE288ED2F9006C8005E8C8E /* Gemfile in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
