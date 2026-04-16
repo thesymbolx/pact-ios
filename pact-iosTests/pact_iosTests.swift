@@ -1,10 +1,3 @@
-//
-//  pact_iosTests.swift
-//  pact-iosTests
-//
-//  Created by Dale Evans on 15/04/2026.
-//
-
 import XCTest
 import PactSwift
 import Foundation

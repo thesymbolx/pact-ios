@@ -1,0 +1,44 @@
+{
+  "configurations" : [
+    {
+      "id" : "B7AD3034-E18B-4406-9F13-C1C58DEF3FFE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "PACT_OUTPUT_DIR",
+        "value" : "\/tmp\/pacts"
+      }
+    ],
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:pact-ios.xcodeproj",
+      "identifier" : "3DF09FE62F8FD33F00AF164A",
+      "name" : "pact-iosTests"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:pact-ios.xcodeproj",
+        "identifier" : "3DF09FE62F8FD33F00AF164A",
+        "name" : "pact-iosTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:pact-ios.xcodeproj",
+        "identifier" : "3DF09FF02F8FD33F00AF164A",
+        "name" : "pact-iosUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
