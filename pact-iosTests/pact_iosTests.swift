@@ -1,9 +1,3 @@
-//
-//  pact_iosTests.swift
-//  pact-iosTests
-//
-//  Created by Dale Evans on 15/04/2026.
-//
 
 import XCTest
 import PactSwift
@@ -13,10 +7,7 @@ import Foundation
 
 class DisneyPactTest: XCTestCase  {
 
-    static var mockService = MockService(
-        consumer: "disney_ios_app",
-        provider: "disney_api",
-    )
+    static var mockService = MockService(consumer: "disney_ios_app", provider: "disney_api")
 
     func testGetAllCharacters() async throws {
         DisneyPactTest.mockService
