@@ -14,7 +14,7 @@ import Foundation
 class DisneyPactTest: XCTestCase  {
 
     static var mockService = MockService(
-        consumer: "disney_android_app",
+        consumer: "disney_ios_app",
         provider: "disney_api",
     )
 
