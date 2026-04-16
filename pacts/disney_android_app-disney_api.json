@@ -1,0 +1,83 @@
+{
+  "consumer": {
+    "name": "disney_android_app"
+  },
+  "interactions": [
+    {
+      "description": "a request to retrieve all characters",
+      "providerStates": [
+        {
+          "name": "a list of Disney characters exists"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/character"
+      },
+      "response": {
+        "body": {
+          "data": [
+            {
+              "_id": 112,
+              "imageUrl": "https://example.com/mickey.png",
+              "name": "Mickey Mouse"
+            }
+          ]
+        },
+        "matchingRules": {
+          "body": {
+            "$.data": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type",
+                  "min": 1
+                }
+              ]
+            },
+            "$.data[*]._id": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$.data[*].imageUrl": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$.data[*].name": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          }
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pactRust": {
+      "mockserver": "1.2.3",
+      "models": "1.1.9"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pactSwift": {
+      "version": "1.1.0"
+    }
+  },
+  "provider": {
+    "name": "disney_api"
+  }
+}

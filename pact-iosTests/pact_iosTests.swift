@@ -13,7 +13,10 @@ import Foundation
 
 class DisneyPactTest: XCTestCase  {
 
-    static var mockService = MockService(consumer: "disney_android_app",provider: "disney_api")
+    static var mockService = MockService(
+        consumer: "disney_android_app",
+        provider: "disney_api",
+    )
 
     func testGetAllCharacters() async throws {
         DisneyPactTest.mockService

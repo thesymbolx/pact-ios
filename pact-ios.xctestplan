@@ -4,7 +4,12 @@
       "id" : "B65AE1F2-313E-412E-83DB-CB25A2DEFF92",
       "name" : "Test Scheme Action",
       "options" : {
-
+        "environmentVariableEntries" : [
+          {
+            "key" : "PACT_OUTPUT_DIR",
+            "value" : "$(PROJECT_DIR)\/pacts"
+          }
+        ]
       }
     }
   ],
