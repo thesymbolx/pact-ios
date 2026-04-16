@@ -1,0 +1,36 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    base64 (0.3.0)
+    bigdecimal (4.1.1)
+    dig_rb (1.0.1)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    mini_mime (1.1.5)
+    multi_xml (0.6.0)
+    ostruct (0.6.3)
+    pact_broker-client (1.77.0)
+      base64 (~> 0.2)
+      dig_rb (~> 1.0)
+      httparty (>= 0.21.0, < 1.0.0)
+      ostruct
+      rake (~> 13.0)
+      table_print (~> 1.5)
+      term-ansicolor (~> 1.7)
+      thor (>= 0.20, < 2.0)
+    rake (13.4.1)
+    sync (0.5.0)
+    table_print (1.5.7)
+    term-ansicolor (1.11.3)
+      tins (~> 1)
+    thor (1.5.0)
+    tins (1.43.0)
+      bigdecimal
+      sync
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pact_broker-client

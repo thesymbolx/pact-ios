@@ -1,0 +1,29 @@
+version: 2.1
+
+jobs:
+  publish-pacts:
+    docker:
+      # Switch to a Ruby base image so 'bundle' works out of the box
+      - image: cimg/ruby:3.2 
+
+    steps:
+      - checkout
+      
+      # 1. Install the gems defined in your Gemfile
+      - run:
+          name: "Install Ruby Dependencies"
+          command: bundle install
+
+      # 2. Publish the pacts
+      - run:
+          name: "Publish Pacts to Pactflow"
+          command: |
+            bundle exec pact-broker publish path/to/your/pacts \
+              --broker-base-url https://yorkshire-building-society.pactflow.io \
+              --broker-token k0xg2l3mRoGHrCo0vAPWUQ \
+              --consumer-app-version 1.0.0
+
+workflows:
+  pact-workflow:
+    jobs:
+      - publish-pacts

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DE288ED2F9006C8005E8C8E /* Gemfile in Sources */ = {isa = PBXBuildFile; fileRef = 3DE288EC2F9006BE005E8C8E /* Gemfile */; };
 		3DF0A0072F8FD70C00AF164A /* PactSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3DF0A0062F8FD70C00AF164A /* PactSwift */; };
 /* End PBXBuildFile section */
 
@@ -255,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE288ED2F9006C8005E8C8E /* Gemfile in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
