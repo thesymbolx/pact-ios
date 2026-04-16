@@ -40,11 +40,8 @@ class DisneyPactTest: XCTestCase  {
             XCTAssertEqual(character.id, 112)
             XCTAssertEqual(character.name, "Mickey Mouse")
             XCTAssertEqual(character.imageUrl, "https://example.com/mickey.png")
-            
-   
         }
     }
-
 }
 
 struct DisneyCharacter: Codable {
