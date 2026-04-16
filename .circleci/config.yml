@@ -21,7 +21,6 @@ jobs:
             bundle exec pact-broker publish ./pacts \
               --broker-base-url https://yorkshire-building-society.pactflow.io \
               --broker-token k0xg2l3mRoGHrCo0vAPWUQ \
-              --consumer-app-version 1.0.0
               --consumer-app-version $CIRCLE_SHA1
 
 workflows:
