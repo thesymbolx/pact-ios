@@ -29,8 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3DE288EC2F9006BE005E8C8E /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
-		3DE289122F901856005E8C8E /* pact-ios.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pact-ios.xctestplan"; sourceTree = "<group>"; };
+		3D4561B32F90F3C500B00642 /* pact-ios.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pact-ios.xctestplan"; sourceTree = "<group>"; };
 		3DF09FDA2F8FD33C00AF164A /* pact-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pact-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF09FE72F8FD33F00AF164A /* pact-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pact-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF09FF12F8FD33F00AF164A /* pact-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pact-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,8 +82,7 @@
 		3DF09FD12F8FD33B00AF164A = {
 			isa = PBXGroup;
 			children = (
-				3DE289122F901856005E8C8E /* pact-ios.xctestplan */,
-				3DE288EC2F9006BE005E8C8E /* Gemfile */,
+				3D4561B32F90F3C500B00642 /* pact-ios.xctestplan */,
 				3DF09FDC2F8FD33C00AF164A /* pact-ios */,
 				3DF09FEA2F8FD33F00AF164A /* pact-iosTests */,
 				3DF09FF42F8FD33F00AF164A /* pact-iosUITests */,

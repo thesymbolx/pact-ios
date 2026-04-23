@@ -1,25 +1,30 @@
 {
   "configurations" : [
     {
-      "id" : "B7AD3034-E18B-4406-9F13-C1C58DEF3FFE",
+      "id" : "B65AE1F2-313E-412E-83DB-CB25A2DEFF92",
       "name" : "Test Scheme Action",
       "options" : {
-
+        "environmentVariableEntries" : [
+          {
+            "key" : "PACT_OUTPUT_DIR",
+            "value" : "$(PROJECT_DIR)\/pacts"
+          }
+        ]
       }
     }
   ],
   "defaultOptions" : {
     "environmentVariableEntries" : [
       {
-        "key" : "PACT_OUTPUT_DIR",
-        "value" : "\/tmp\/pacts"
+        "key" : "PACT_DIR",
+        "value" : "$(PROJECT_DIR)\/pacts"
       }
     ],
     "performanceAntipatternCheckerEnabled" : true,
     "targetForVariableExpansion" : {
       "containerPath" : "container:pact-ios.xcodeproj",
-      "identifier" : "3DF09FE62F8FD33F00AF164A",
-      "name" : "pact-iosTests"
+      "identifier" : "3DF09FD92F8FD33C00AF164A",
+      "name" : "pact-ios"
     }
   },
   "testTargets" : [

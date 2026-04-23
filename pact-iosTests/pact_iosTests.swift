@@ -1,3 +1,4 @@
+
 import XCTest
 import PactSwift
 import Foundation
@@ -6,9 +7,9 @@ import Foundation
 
 class DisneyPactTest: XCTestCase  {
 
-    static var mockService = MockService(consumer: "disney_android_app",provider: "disney_api")
+    static var mockService = MockService(consumer: "disney_ios_app", provider: "disney_api")
 
-    func getAllCharacters() async throws {
+    func testGetAllCharacters() async throws {
         DisneyPactTest.mockService
             .uponReceiving("a request to retrieve all characters")
             .given("a list of Disney characters exists")
@@ -33,11 +34,8 @@ class DisneyPactTest: XCTestCase  {
             XCTAssertEqual(character.id, 112)
             XCTAssertEqual(character.name, "Mickey Mouse")
             XCTAssertEqual(character.imageUrl, "https://example.com/mickey.png")
-            
-   
         }
     }
-
 }
 
 struct DisneyCharacter: Codable {
